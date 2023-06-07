@@ -7,6 +7,7 @@ import Blog from "./components/Blog";
 import About from "./components/About";
 import NotFound from "./components/NotFound";
 import Layout from "./components/Layout";
+import Product from "./components/Product";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/product/:id" element={<Product />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blog/:id" element={<Blog />} />
             <Route path="/about" element={<About />} />
